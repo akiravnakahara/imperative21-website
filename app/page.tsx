@@ -1,65 +1,114 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <>
+      {/* Hero */}
+      <section className="relative min-h-screen flex items-end pb-24 px-8 pt-32 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/projects/reset/shared-prosperity.jpg"
+            alt=""
+            fill
+            className="object-cover object-center opacity-30"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0D] via-[#0D0D0D]/60 to-[#0D0D0D]/20" />
+        </div>
+
+        <div className="relative z-10 max-w-5xl mx-auto w-full">
+          <h1
+            className="text-[clamp(2.8rem,6vw,5.5rem)] font-black leading-[1.05] tracking-tight text-[#F0EDE6] mb-6 max-w-3xl"
+            style={{ fontFamily: "var(--font-playfair)" }}
+          >
+            The economy is a story and a system made by people.
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p
+            className="text-[clamp(1.1rem,2vw,1.5rem)] text-[#F0EDE6] mb-10"
+            style={{ fontFamily: "var(--font-playfair)", fontStyle: "italic" }}
+          >
+            We the people can remake it.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+          <p className="text-[15px] text-[#C8C4BC] leading-relaxed max-w-xl mb-6">
+            Imperative 21 was a global network, active from 2020 to 2026,
+            reshaping economic narratives and reimagining systems so everyone,
+            everywhere can thrive.
+          </p>
+          <p className="text-[15px] text-[#C8C4BC] leading-relaxed max-w-xl mb-12">
+            This site is a home for the{" "}
+            <Link
+              href="/imperatives"
+              className="text-[#F0EDE6] underline underline-offset-4 decoration-[#A89060] hover:text-[#A89060] transition-colors"
+            >
+              Imperatives for Economic Systems Change
+            </Link>
+            , developed with hundreds of allies across our global network to ground
+            a diverse movement in shared principles for economic systems change,
+            and the{" "}
+            <Link
+              href="/our-work"
+              className="text-[#F0EDE6] underline underline-offset-4 decoration-[#A89060] hover:text-[#A89060] transition-colors"
+            >
+              projects
+            </Link>{" "}
+            that put them into action.
+          </p>
+
+          <Link
+            href="/about"
+            className="inline-block text-[11px] font-semibold tracking-[0.15em] uppercase border border-[#F0EDE6] text-[#F0EDE6] px-7 py-4 hover:border-[#A89060] hover:text-[#A89060] transition-colors duration-200"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            Learn More
+          </Link>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* RESET artwork strip */}
+      <section className="px-8 py-16 border-t border-[#2E2E2C]">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-[11px] font-medium tracking-[0.2em] uppercase text-[#F0EDE6] mb-6">
+            From the RESET Campaign
+          </p>
+          <div className="grid grid-cols-3 gap-3">
+            {[
+              {
+                src: "/images/projects/reset/respected.jpg",
+                alt: "Dis / Respected — RESET Campaign",
+              },
+              {
+                src: "/images/projects/reset/profit-purpose.jpg",
+                alt: "Profit + Purpose — Mike Nicholson",
+              },
+              {
+                src: "/images/projects/reset/exclusive-inclusive.jpg",
+                alt: "Exclusive / Inclusive — Bee Harris",
+              },
+            ].map(({ src, alt }) => (
+              <Link
+                href="/our-work"
+                key={src}
+                className="group relative aspect-[3/4] overflow-hidden"
+              >
+                <Image
+                  src={src}
+                  alt={alt}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </Link>
+            ))}
+          </div>
+          <div className="mt-5 flex justify-end">
+            <Link
+              href="/our-work"
+              className="text-[11px] font-medium tracking-[0.15em] uppercase text-[#F0EDE6] hover:text-[#A89060] transition-colors"
+            >
+              See all featured projects →
+            </Link>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

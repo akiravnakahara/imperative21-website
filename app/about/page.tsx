@@ -73,10 +73,10 @@ export default function About() {
             </p>
             <p className="text-[16px] text-[#C8C4BC] leading-relaxed">
               Imperative 21 was made possible by a founding group of network stewards
-              whose vision and commitment gave the work its foundation. We are grateful
-              to B Lab, B Team, CECP, Common Future, Conscious Capitalism, GIIN, Just
-              Capital, and Participant for believing that a different kind of economy
-              was possible and that the power to shape it lay in changing the story.
+              whose vision and commitment gave the work its foundation. B Lab, B Team,
+              CECP, Common Future, Conscious Capitalism, GIIN, Just Capital, and
+              Participant believed that a different kind of economy was possible, and
+              that the power to shape it lay in changing the story.
             </p>
           </section>
 

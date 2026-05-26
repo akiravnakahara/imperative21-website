@@ -52,23 +52,24 @@ export default function About() {
           {/* Intro */}
           <section className="mb-24 max-w-3xl mt-8">
             <p className="text-[16px] text-[#C8C4BC] leading-relaxed mb-5">
-              Imperative 21 was a global network reshaping economic narratives and
-              reimagining systems so everyone, everywhere can thrive. Our network
-              was united by a shared mission to shift the cultural narrative about
-              the role of business and finance in society, consistent with the
-              co-created{" "}
+              Imperative 21 was built on the belief that narrative power can only
+              be built through radical collaboration. By bridging the energies,
+              interests, and capabilities of business leaders, movements, and
+              culture shifters, the network worked to activate a community of
+              allies around a{" "}
               <Link
                 href="/imperatives"
                 className="text-[#F0EDE6] underline underline-offset-4 decoration-[#A89060] hover:text-[#A89060] transition-colors"
               >
-                Imperatives for Economic Systems Change
+                shared vision
               </Link>
-              .
+              {" "}of a just economy that creates shared wellbeing on a healthy planet.
             </p>
             <p className="text-[16px] text-[#C8C4BC] leading-relaxed">
-              Imperative 21 collaborated with leaders who had the imagination and
-              courage to reimagine our economic system and model new ways of
-              working and investing.
+              Across the global network, Imperative 21 coordinated partners around
+              a consistent set of values, creating the cultural space needed for
+              business leaders and policymakers to lead change inside their
+              organizations and drive systemic change together.
             </p>
           </section>
 

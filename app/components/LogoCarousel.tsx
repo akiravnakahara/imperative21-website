@@ -18,7 +18,7 @@ const partners = [
   { name: "Inclusive Capitalism", logo: "/images/logos/inclusivecapitalism.png" },
 ];
 
-const PER_PAGE = 4;
+const PER_PAGE = 8;
 
 export default function LogoCarousel() {
   const [index, setIndex] = useState(0);

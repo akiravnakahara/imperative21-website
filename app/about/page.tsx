@@ -65,11 +65,18 @@ export default function About() {
               </Link>
               {" "}of a just economy that creates shared wellbeing on a healthy planet.
             </p>
-            <p className="text-[16px] text-[#C8C4BC] leading-relaxed">
+            <p className="text-[16px] text-[#C8C4BC] leading-relaxed mb-5">
               Across the global network, Imperative 21 coordinated partners around
               a consistent set of values, creating the cultural space needed for
               business leaders and policymakers to lead change inside their
               organizations and drive systemic change together.
+            </p>
+            <p className="text-[16px] text-[#C8C4BC] leading-relaxed">
+              Imperative 21 was made possible by a founding group of network stewards
+              whose vision and commitment gave the work its foundation. We are grateful
+              to B Lab, B Team, CECP, Common Future, Conscious Capitalism, GIIN, Just
+              Capital, and Participant for believing that a different kind of economy
+              was possible and that the power to shape it lay in changing the story.
             </p>
           </section>
 

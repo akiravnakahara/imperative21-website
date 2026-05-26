@@ -1,7 +1,4 @@
-"use client";
-
 import Image from "next/image";
-import { useState } from "react";
 
 const partners = [
   { name: "Common Future", logo: "/images/logos/CommonFuturelogo.png" },
@@ -18,54 +15,26 @@ const partners = [
   { name: "Inclusive Capitalism", logo: "/images/logos/inclusivecapitalism.png" },
 ];
 
-const PER_PAGE = 8;
-
 export default function LogoCarousel() {
-  const [index, setIndex] = useState(0);
-  const total = Math.ceil(partners.length / PER_PAGE);
-
-  const prev = () => setIndex((i) => Math.max(0, i - 1));
-  const next = () => setIndex((i) => Math.min(total - 1, i + 1));
-
-  const visible = partners.slice(index * PER_PAGE, index * PER_PAGE + PER_PAGE);
-
   return (
-    <div className="flex items-center gap-4">
-      <button
-        onClick={prev}
-        disabled={index === 0}
-        className="text-[#F0EDE6] hover:text-[#A89060] disabled:opacity-20 transition-colors text-xl flex-shrink-0 w-8 text-center"
-        aria-label="Previous"
-      >
-        ←
-      </button>
-
-      <div className="flex gap-3 flex-1">
-        {visible.map(({ name, logo }) => (
+    <div className="bg-[#F0EDE6] p-8">
+      <div className="grid grid-cols-6 gap-6">
+        {partners.map(({ name, logo }) => (
           <div
             key={name}
-            className="flex items-center justify-center bg-[#F0EDE6] flex-1"
-            style={{ padding: "6px 10px", height: "100px" }}
+            className="flex items-center justify-center"
+            style={{ height: "80px" }}
           >
             <Image
               src={logo}
               alt={name}
               width={220}
               height={80}
-              className="w-full h-[88px] object-contain"
+              className="w-full h-[70px] object-contain"
             />
           </div>
         ))}
       </div>
-
-      <button
-        onClick={next}
-        disabled={index === total - 1}
-        className="text-[#F0EDE6] hover:text-[#A89060] disabled:opacity-20 transition-colors text-xl flex-shrink-0 w-8 text-center"
-        aria-label="Next"
-      >
-        →
-      </button>
     </div>
   );
 }

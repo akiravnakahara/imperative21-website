@@ -89,13 +89,15 @@ export default function OurWork() {
                 </a>
               </div>
               <div className="flex items-start">
-                <Image
-                  src="/images/projects/margins/margins-2.png"
-                  alt="Margins to Mainstream Report Cover"
-                  width={300}
-                  height={400}
-                  className="w-3/4 h-auto object-contain"
-                />
+                <a href="/assets/MarginsToMainstream-May2026.pdf" target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src="/images/projects/margins/margins-2.png"
+                    alt="Margins to Mainstream Report Cover"
+                    width={300}
+                    height={400}
+                    className="w-3/4 h-auto object-contain hover:opacity-80 transition-opacity duration-200"
+                  />
+                </a>
               </div>
             </div>
 

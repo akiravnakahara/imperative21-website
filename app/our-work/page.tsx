@@ -99,37 +99,6 @@ export default function OurWork() {
               </div>
             </div>
 
-            {/* Videos */}
-            <div className="grid grid-cols-2 gap-8">
-              <div className="flex gap-5">
-                <div className="relative w-2/5 flex-shrink-0 aspect-[9/16] bg-[#141414]">
-                  <iframe
-                    src="https://player.vimeo.com/video/1195709286"
-                    title="Report Hot Take — Michael Mezzatesta"
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    allowFullScreen
-                    className="absolute inset-0 w-full h-full"
-                  />
-                </div>
-                <p className="text-[13px] text-[#88887E] leading-relaxed pt-1">Report Hot Take Video from Michael Mezzatesta /{" "}
-                  <a href="https://www.betterfuture.media" target="_blank" rel="noopener noreferrer" className="text-[#C8C4BC] hover:text-[#F0EDE6] underline underline-offset-4 decoration-[#A89060] transition-colors">Better Future Media</a>
-                </p>
-              </div>
-              <div className="flex gap-5">
-                <div className="relative w-2/5 flex-shrink-0 aspect-[9/16] bg-[#141414]">
-                  <iframe
-                    src="https://player.vimeo.com/video/1195712966"
-                    title="Report Hot Take — Dino Foxx / Foxxy Blue Snacks"
-                    allow="autoplay; fullscreen; picture-in-picture"
-                    allowFullScreen
-                    className="absolute inset-0 w-full h-full"
-                  />
-                </div>
-                <p className="text-[13px] text-[#88887E] leading-relaxed pt-1">Report Hot Take Video from Dino Foxx of Justice Funders /{" "}
-                  <a href="https://www.instagram.com/dinofoxx/" target="_blank" rel="noopener noreferrer" className="text-[#C8C4BC] hover:text-[#F0EDE6] underline underline-offset-4 decoration-[#A89060] transition-colors">Foxxy Blue Snacks</a>
-                </p>
-              </div>
-            </div>
           </section>
 
           {/* Project 2: Scene on Radio: Capitalism */}

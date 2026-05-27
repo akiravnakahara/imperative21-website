@@ -55,7 +55,7 @@ export default function Home() {
             that put them into action.
           </p>
 
-          <div className="flex gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <Link
               href="/our-work"
               className="inline-block text-[11px] font-semibold tracking-[0.15em] uppercase border border-[#F0EDE6] text-[#F0EDE6] px-7 py-4 hover:border-[#A89060] hover:text-[#A89060] transition-colors duration-200"

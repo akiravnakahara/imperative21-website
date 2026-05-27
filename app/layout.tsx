@@ -49,7 +49,7 @@ export default function RootLayout({
                   everyone, everywhere can thrive.
                 </p>
               </div>
-              <nav className="flex gap-6 text-[10px] font-[500] tracking-[0.12em] uppercase">
+              <nav className="flex flex-wrap gap-x-6 gap-y-3 text-[10px] font-[500] tracking-[0.12em] uppercase">
                 {[
                   { href: "/", label: "Home" },
                   { href: "/about", label: "About" },

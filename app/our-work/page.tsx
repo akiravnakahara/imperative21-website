@@ -95,7 +95,7 @@ export default function OurWork() {
                     alt="Margins to Mainstream Report Cover"
                     width={300}
                     height={400}
-                    className="w-3/4 h-auto object-contain hover:opacity-80 transition-opacity duration-200"
+                    className="w-full md:w-3/4 h-auto object-contain hover:opacity-80 transition-opacity duration-200"
                   />
                 </a>
               </div>

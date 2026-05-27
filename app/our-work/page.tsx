@@ -218,7 +218,7 @@ export default function OurWork() {
             </div>
 
             {/* Two videos side by side */}
-            <div className="grid grid-cols-2 gap-6 mb-24">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-24">
               <div className="aspect-video bg-[#141414]">
                 <iframe
                   src="https://www.youtube.com/embed/v8B8Z84En3M"

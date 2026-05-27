@@ -18,7 +18,7 @@ const partners = [
 export default function LogoCarousel() {
   return (
     <div className="bg-[#F0EDE6] p-4">
-      <div className="grid grid-cols-6 gap-6">
+      <div className="grid grid-cols-3 md:grid-cols-6 gap-6">
         {partners.map(({ name, logo }) => (
           <div
             key={name}

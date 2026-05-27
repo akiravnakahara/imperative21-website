@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
+import Header from "./components/Header";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -29,33 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <body className="min-h-screen flex flex-col bg-[var(--bg)] text-[var(--fg)]">
-        <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-5 border-b border-[var(--border)] bg-[var(--bg)]/90 backdrop-blur-sm">
-          <Link href="/">
-            <Image
-              src="/images/logos/Imperative21_Logo_White.png"
-              alt="Imperative 21"
-              width={140}
-              height={36}
-              className="h-7 w-auto"
-            />
-          </Link>
-          <nav className="flex items-center gap-8">
-            {[
-              { href: "/", label: "Home" },
-              { href: "/about", label: "About" },
-              { href: "/our-work", label: "Our Work" },
-              { href: "/imperatives", label: "Imperatives" },
-            ].map(({ href, label }) => (
-              <Link
-                key={href}
-                href={href}
-                className="text-[11px] font-[500] tracking-[0.15em] uppercase text-[#F0EDE6] hover:text-[#A89060] transition-colors duration-200"
-              >
-                {label}
-              </Link>
-            ))}
-          </nav>
-        </header>
+        <Header />
         <main className="flex-1">{children}</main>
         <footer className="bg-[#141414] border-t border-[#2A2A28] px-8 py-12 mt-48">
           <div className="max-w-5xl mx-auto">

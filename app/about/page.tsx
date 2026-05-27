@@ -87,8 +87,8 @@ export default function About() {
             </h2>
             <div className="flex flex-col gap-24">
               {leadership.map(({ name, title, photo, bio, website }) => (
-                <div key={name} className="flex flex-row gap-10 max-w-3xl">
-                  <div className="relative w-[220px] h-[258px] overflow-hidden flex-shrink-0">
+                <div key={name} className="flex flex-col md:flex-row gap-6 md:gap-10 max-w-3xl">
+                  <div className="relative w-full md:w-[220px] h-[300px] md:h-[258px] overflow-hidden flex-shrink-0">
                     <Image
                       src={photo}
                       alt={name}
